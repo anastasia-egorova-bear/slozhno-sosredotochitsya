@@ -240,7 +240,7 @@ button:focus {
     grid-column: 2;
   }
 
-  .section__what {
+  .card-list__section-what {
     grid-template-rows: min-content max-content;
   }
 
@@ -257,16 +257,10 @@ button:focus {
     grid-template-rows: minmax(min-content, max-content);
   }
 
-  .section__what {
-    grid-template-columns: repeat(3, 314px);
-  }
-
-  .section__what .content__section-title {
-    grid-row: 1;
-  }
-
-  .section__what .card {
-    grid-row: 2;
+  .card-list__section-what {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .section__what .content__section-title {
