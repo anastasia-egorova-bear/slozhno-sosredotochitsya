@@ -23,9 +23,9 @@ button:focus {
   grid-template-rows: 1fr max-content 1fr;
   align-items: center;
   height: 100vh;
+  min-height: 668px;
   padding: 10px;
   color: var(--accent-color);
-  min-height: 668px;
 }
 
 @media (min-width: 768px) {
@@ -137,7 +137,7 @@ button:focus {
 }
 
 .header__theme-menu-button {
-  border: transparent;
+  border: 1px solid transparent;
   color: var(--header-theme);
   font-family: inherit;
   font-weight: normal;
@@ -249,6 +249,11 @@ button:focus {
   }
 }
 
+.card-list__section-what {
+  display: grid;
+  gap: 20px;
+}
+
 @media (min-width: 1024px) {
 
   .section__why,
@@ -258,9 +263,8 @@ button:focus {
   }
 
   .card-list__section-what {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    row-gap: 0;
   }
 
   .section__what .content__section-title {
@@ -383,9 +387,9 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   background: var(--bg-color);
   min-block-size: 668px;
-  height: 100vh;
 }
 
 @media (min-width: 768px) {
