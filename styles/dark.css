@@ -1,4 +1,4 @@
-:root.theme_dark {
+.page.theme_dark {
   --font-family: "IBM Plex Mono", sans-serif;
   --title-color: #db00ff;
   --accent-color: #ff0070;
