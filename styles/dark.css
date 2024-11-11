@@ -1,15 +1,22 @@
 .page.theme_dark {
-  --font-family: "IBM Plex Mono", sans-serif;
-  --title-color: #db00ff;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --subtitle-color: #000028;
-  --section-title:  #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
+  --section-title: #ff0070;
+  --nav-color: #ff0070;
+  --header-logo-color: #db00ff;
   --bg-color: #000028;
   --link-color: #f1b2ce;
   --header-theme: #ff0070;
-  --button-color: #ff0070;
   --dec-element: #ff0070;
+  --footer-logo-color: #db00ff;
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__theme-menu-button-active {
+  border: 1px solid var(--nav-color);
+}
+
+.theme_dark .header__theme-menu-button:hover {
   --menu-button-hover: rgba(255, 0, 112, 0.4);
 }

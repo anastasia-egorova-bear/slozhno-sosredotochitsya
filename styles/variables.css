@@ -1,15 +1,30 @@
 :root {
   --font-family: "IBM Plex Mono", sans-serif;
-  --title-color: #db00ff;
+  --main-gap: 10px;
+  --font-size: 18px;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
   --subtitle-color: #000028;
   --section-title: #ff0070;
-  --bg-image: url(../images/cover-image-dark.png);
+  --nav-color: #ff0070;
+  --header-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*116px - 120px*/
+  --header-logo-color: #db00ff;
   --bg-color: #000028;
-  --font-size: 18px;
   --link-color: #f1b2ce;
   --header-theme: #ff0070;
   --dec-element: #ff0070;
   --menu-button-hover: rgba(255, 0, 112, 0.4);
+  --footer-logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-logo-color: #db00ff;
+
+  --bg-image: url(../images/cover-image-dark.png);
 }
+
+@media (width >= 768px) {
+  :root {
+    --main-gap: 20px;
+    --header-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /*120px - 157px*/
+  }
+}
+
